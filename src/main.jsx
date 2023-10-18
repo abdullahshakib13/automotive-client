@@ -9,6 +9,8 @@ import {
 } from "react-router-dom";
 import Home from './components/Home.jsx';
 import Root from './layouts/Root.jsx';
+import AddProduct from './components/AddProduct/AddProduct.jsx';
+import UpdateProduct from './components/UpdateProduct/UpdateProduct.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,8 +19,17 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home></Home>
-  }
+        element: <Home></Home>,
+        loader:()=>fetch('http://localhost:5000/product')
+      },
+      {
+        path: "/addProduct",
+        element: <AddProduct></AddProduct>
+      },
+      {
+        path: "/updateProduct",
+        element: <UpdateProduct></UpdateProduct>
+      }
       
     ]
   },
