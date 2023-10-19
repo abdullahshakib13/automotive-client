@@ -8,7 +8,7 @@ const Home = () => {
     const products = useLoaderData();
     return (
         <div>
-            <Navbar></Navbar>
+            {/* <Navbar></Navbar> */}
             <Banner></Banner>
             <div className='m-20'>
                 <h2 className='text-center'>Home: {products.length}</h2>

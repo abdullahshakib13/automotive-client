@@ -14,6 +14,7 @@ import UpdateProduct from './components/UpdateProduct/UpdateProduct.jsx';
 import Register from './components/Register/Register';
 import Login from './components/Login/Login';
 import AuthProvider from './providers/AuthProvider.jsx';
+import PrivateRoute from './routes/PrivateRoute';
 
 
 const router = createBrowserRouter([
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/addProduct",
-        element: <AddProduct></AddProduct>
+        element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
       },
       {
         path: "/updateProduct/:id",
