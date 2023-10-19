@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+// import App from './App.jsx'
 import './index.css'
 
 import {
@@ -27,8 +27,9 @@ const router = createBrowserRouter([
         element: <AddProduct></AddProduct>
       },
       {
-        path: "/updateProduct",
-        element: <UpdateProduct></UpdateProduct>
+        path: "/updateProduct/:id",
+        element: <UpdateProduct></UpdateProduct>,
+        loader:({params})=>fetch(`http://localhost:5000/product/${params.id}`)
       }
       
     ]
