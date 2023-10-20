@@ -1,8 +1,9 @@
 import { useLoaderData } from 'react-router-dom';
 import Banner from './Banner/Banner';
 import Footer from './Footer/Footer';
-import Navbar from './Navbar/Navbar';
+// import Navbar from './Navbar/Navbar';
 import ProductCard from './AddProduct/ProductCard';
+import BrandName from './BrandName/BrandName';
 
 const Home = () => {
     const products = useLoaderData();
@@ -10,6 +11,7 @@ const Home = () => {
         <div>
             {/* <Navbar></Navbar> */}
             <Banner></Banner>
+            <BrandName></BrandName>
             <div className='m-20'>
                 <h2 className='text-center'>Home: {products.length}</h2>
                 <div className='grid grid-cols-2'>

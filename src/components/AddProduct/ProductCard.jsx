@@ -5,11 +5,11 @@ const ProductCard = ({ product }) => {
     return (
         <div className="card card-side bg-base-100 shadow-xl">
             <figure><img src={image} alt="Movie"/></figure>
-            <div className="flex justify-between">
+            <div className="flex  justify-between pr-4 w-full">
                 <div>
                     <h2 className="card-title">Name: { name}</h2>
                     <p>Brand Name: { brand}</p>
-                    <p>Type: { brand}</p>
+                    <p>Type: { type}</p>
                     <p>Price: {price}</p>
                     <p>Short Description: { description}</p>
                 </div>

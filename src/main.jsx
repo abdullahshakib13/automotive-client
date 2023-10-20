@@ -15,17 +15,20 @@ import Register from './components/Register/Register';
 import Login from './components/Login/Login';
 import AuthProvider from './providers/AuthProvider.jsx';
 import PrivateRoute from './routes/PrivateRoute';
+import ErrorPage from './errorPage/ErrorPage';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
         element: <Home></Home>,
-        loader:()=>fetch('http://localhost:5000/product')
+        // loader: () => fetch('http://localhost:5000/product'),
+        loader:()=>fetch('/brandName.json')
       },
       {
         path: "/addProduct",
