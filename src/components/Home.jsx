@@ -16,19 +16,19 @@ const Home = () => {
             {/* <Navbar></Navbar> */}
             <Banner></Banner>
             {/* <BrandName></BrandName> */}
-            <div className='grid grid-cols-3 mt-20'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-7 mt-20'>
                 {
                 brandNames.map(brandName=><BrandName key={brandName.id} brandName={brandName}></BrandName>)
             }
             </div>
-            <div className='m-20'>
-                {/* <h2 className='text-center'>Home: {products.length}</h2> */}
-                {/* <div className='grid grid-cols-2'>
+            {/* <div className='m-20'>
+                 <h2 className='text-center'>Home: {products.length}</h2> */}
+                 {/* <div className='grid grid-cols-2'>
                     {
                       products.map(product=> <ProductCard key={product._id} product={product}></ProductCard>)
                     }
-                </div> */}
-            </div>
+                </div>   */}
+            {/* </div>  */} 
             <AboutUs></AboutUs>
             <ContactUs></ContactUs>
 

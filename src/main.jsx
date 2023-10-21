@@ -16,6 +16,8 @@ import Login from './components/Login/Login';
 import AuthProvider from './providers/AuthProvider.jsx';
 import PrivateRoute from './routes/PrivateRoute';
 import ErrorPage from './errorPage/ErrorPage';
+import ProductCard from './components/AddProduct/ProductCard';
+import MyCart from './components/MyCart/MyCart';
 
 
 const router = createBrowserRouter([
@@ -38,6 +40,15 @@ const router = createBrowserRouter([
         path: "/updateProduct/:id",
         element: <UpdateProduct></UpdateProduct>,
         loader:({params})=>fetch(`https://automotive-server-fre82u6n1-abdullah-shakibs-projects.vercel.app/product/${params.id}`)
+      },
+      {
+        path: "/myCart",
+        element:<MyCart></MyCart>
+      },
+      {
+        path: "/productCard",
+        element: <ProductCard></ProductCard>,
+        loader: () => fetch('https://automotive-server-fre82u6n1-abdullah-shakibs-projects.vercel.app/product'),
       },
       {
         path: "/register",

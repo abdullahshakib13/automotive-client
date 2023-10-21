@@ -36,82 +36,83 @@ const AddProduct = () => {
         
     }
     return (
-        <div className="bg-blue-200 p-24 ">
-            <h2 className='text-2xl font-semibold text-center mb-6'>Add Product</h2>
-            <form onSubmit={handleAddProduct}>
-                    
-                    <div className="flex mb-6">
-                        <div className="form-control w-1/2">
-                        <label className="label">
-                            <span className="label-text">Name</span>
-                        </label>
-                        <label className="input-group">
-                            <input type="text" name="name" placeholder="name" className="input input-bordered w-full" />
-                        </label>
-                    </div>
-                    <div className="form-control w-1/2 ml-4">
-                        <label className="label">
-                            <span className="label-text">Brand Name</span>
-                        </label>
-                        <label className="input-group">
-                            <input type="text" name="brand" placeholder="brand name" className="input input-bordered w-full" />
-                        </label>
-                    </div>
-                    </div>
-                    {/* Select Type */}
-                    <div className='flex mb-6'>
-                        <div className="form-control w-1/2">
-                        <label className="label">
-                            <span className="label-text">Type</span>
-                        </label>
-                        <select className="select select-bordered w-full " name="type">
-                        <option disabled selected>Select Category</option>
-                        <option>Toyota</option>
-                        <option>Ford</option>
-                        <option>BMW</option>
-                        <option>Mercedes-Benz</option>
-                        <option>Tesla</option>
-                        <option>Honda</option>
-                    </select>
-                    </div>
-                    <div className="form-control w-1/2 ml-4">
-                        <label className="label">
-                            <span className="label-text">Price</span>
-                        </label>
-                        <label className="input-group">
-                            <input type="text" name="price" placeholder="price" className="input input-bordered w-full" />
-                        </label>
-                    </div>
-                    </div>
-                    <div className='flex mb-6'>
-                        <div className="form-control w-1/2">
-                        <label className="label">
-                            <span className="label-text">Short description</span>
-                        </label>
-                        <label className="input-group">
-                            <textarea className="textarea textarea-bordered w-full" name="description" placeholder="Short Description"></textarea>
-                        </label>
-                    </div>
-                    <div className="form-control w-1/2 ml-4">
-                        <label className="label">
-                            <span className="label-text">Image</span>
-                        </label>
-                        <label className="input-group">
-                            <input type="text" name="image" placeholder="image" className="input input-bordered w-full" />
-                        </label>
-                    </div>
-                    </div>
-                    <div className="rating ">
-                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
-                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                </div> 
-                <br />
-                <input type="submit" value="Add Product" className="btn btn-info " />
-            </form>
-        </div>
+        
+        <div className="bg-blue-200 p-4 sm:p-8 md:p-12 lg:p-16 xl:p-24">
+  <h2 className='text-2xl font-semibold text-center mb-6'>Add Product</h2>
+  <form onSubmit={handleAddProduct} className="w-full sm:w-11/12 md:w-10/12 lg:w-8/12 xl:w-6/12 mx-auto">
+    <div className="flex flex-col mb-4 sm:flex-row">
+      <div className="form-control w-full sm:w-1/2 sm:mr-4">
+        <label className="label">
+          <span className="label-text">Name</span>
+        </label>
+        <label className="input-group">
+          <input type="text" name="name" placeholder="Name" className="input input-bordered w-full" />
+        </label>
+      </div>
+      <div className="form-control w-full sm:w-1/2">
+        <label className="label">
+          <span className="label-text">Brand Name</span>
+        </label>
+        <label className="input-group">
+          <input type="text" name="brand" placeholder="Brand Name" className="input input-bordered w-full" />
+        </label>
+      </div>
+    </div>
+    {/* Select Type */}
+    <div className='flex flex-col mb-4 sm:flex-row'>
+      <div className="form-control w-full sm:w-1/2 sm:mr-4">
+        <label className="label">
+          <span className="label-text">Type</span>
+        </label>
+        <select className="select select-bordered w-full" name="type">
+          <option disabled selected>Select Category</option>
+          <option>Toyota</option>
+          <option>Ford</option>
+          <option>BMW</option>
+          <option>Mercedes-Benz</option>
+          <option>Tesla</option>
+          <option>Honda</option>
+        </select>
+      </div>
+      <div className="form-control w-full sm:w-1/2">
+        <label className="label">
+          <span className="label-text">Price</span>
+        </label>
+        <label className="input-group">
+          <input type="text" name="price" placeholder="Price" className="input input-bordered w-full" />
+        </label>
+      </div>
+    </div>
+    <div className='flex flex-col mb-4 sm:flex-row'>
+      <div className="form-control w-full sm:w-1/2 sm:mr-4">
+        <label className="label">
+          <span className="label-text">Short description</span>
+        </label>
+        <label className="input-group">
+          <textarea className="textarea textarea-bordered w-full" name="description" placeholder="Short Description"></textarea>
+        </label>
+      </div>
+      <div className="form-control w-full sm:w-1/2">
+        <label className="label">
+          <span className="label-text">Image</span>
+        </label>
+        <label className="input-group">
+          <input type="text" name="image" placeholder="Image" className="input input-bordered w-full" />
+        </label>
+      </div>
+    </div>
+    <div className="rating">
+      <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+      <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+    </div>
+    <br />
+    <input type="submit" value="Add Product" className="btn btn-info" />
+  </form>
+</div>
+
     );
 };
 
