@@ -1,4 +1,4 @@
-import React from 'react';
+
 import image from "../assets/images/404.png";
 
 const ErrorPage = () => {

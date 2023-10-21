@@ -2,32 +2,32 @@
     {
   "id": 1,
   "image": "https://ibb.co/0njKpSd",
-  "brand name": "Toyota"
+  "brand_name": "Toyota"
 },
 {
   "id": 2,
   "image": "https://ibb.co/ZTk5430",
-  "brand name": "Ford"
+  "brand_name": "Ford"
 },
 {
   "id": 3,
   "image": "https://ibb.co/StNwL48",
-  "brand name": "BMW"
+  "brand_name": "BMW"
 },
 {
   "id": 4,
   "image": "https://ibb.co/TRHKsJH",
-  "brand name": "Marcedes-Benz"
+  "brand_name": "Marcedes-Benz"
 },
 {
   "id": 5,
   "image": "https://ibb.co/4jkZVYr",
-  "brand name": "Tesla"
+  "brand_name": "Tesla"
 },
 {
   "id": 6,
   "image": "https://ibb.co/nCzkRTM",
-  "brand name": "Honda"
+  "brand_name": "Honda"
 }
 
 ]

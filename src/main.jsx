@@ -22,12 +22,12 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement: <ErrorPage></ErrorPage>,
+    // errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
         element: <Home></Home>,
-        // loader: () => fetch('http://localhost:5000/product'),
+        // loader: () => fetch('https://automotive-server-fre82u6n1-abdullah-shakibs-projects.vercel.app/product'),
         loader:()=>fetch('/brandName.json')
       },
       {
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
       {
         path: "/updateProduct/:id",
         element: <UpdateProduct></UpdateProduct>,
-        loader:({params})=>fetch(`http://localhost:5000/product/${params.id}`)
+        loader:({params})=>fetch(`https://automotive-server-fre82u6n1-abdullah-shakibs-projects.vercel.app/product/${params.id}`)
       },
       {
         path: "/register",
