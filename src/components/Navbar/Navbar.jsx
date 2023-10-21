@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import image from "../../assets/images/logo.png";
 
 
 const Navbar = () => {
@@ -31,7 +32,11 @@ const Navbar = () => {
                    {navLinks}
                 </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Automotive</a>
+                {/* <a className="btn btn-ghost normal-case text-xl">{ image}</a> */}
+                <div className="flex gap-2">
+                    <img className="w-[32px] h-[32px]" src={image} alt="" />
+                    <p className="text-2xl font-medium">Automotive</p>
+                </div>
             </div>
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">

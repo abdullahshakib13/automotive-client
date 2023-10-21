@@ -10,6 +10,7 @@ import ContactUs from './ContactUs/ContactUs';
 const Home = () => {
     // const products = useLoaderData();
     const brandNames = useLoaderData();
+    console.log(brandNames);
     return (
         <div>
             {/* <Navbar></Navbar> */}
